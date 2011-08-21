@@ -21,4 +21,4 @@ def register(request):
     templateData = {
                     'form': form,
                     }
-    return render_to_response('form.html', {'form': form}, context_instance=RequestContext(request))
+    return render_to_response('form.html', templateData, context_instance=RequestContext(request))
